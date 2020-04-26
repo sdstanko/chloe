@@ -1,0 +1,93 @@
+.page-header {
+	// position: fixed;
+	// width: 100%;
+	// background-color: rgba(255, 255, 255, 0.6);
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 0;
+	}
+
+	&__contact {
+		display: flex;
+	}
+
+	&__slogan {
+		margin-right: 1.5rem;
+		font-weight: 400;
+
+		@media (max-width: $screen-md) {
+			font-size: 1rem;
+		}
+
+		@media (max-width: $screen-sm) {
+			display: none;
+		}
+	}
+
+	&__call {
+		display: flex;
+		align-items: center;
+	}
+
+	&__phone-icon {
+		width: 20px;
+		height: 20px;
+		margin-right: 0.4rem;
+		fill: $pink;
+		transition: $basic-transition linear;
+
+		@media (max-width: $screen-sm) {
+			width: 25px;
+			height: 25px;
+		}
+
+		&:hover {
+			fill: $basic;
+		}
+	}
+
+	&__phone {
+		text-decoration: none;
+		transition: $basic-transition linear;
+		color: $basic;
+
+		@media (max-width: $screen-sm) {
+			font-size: 1.2rem;
+		}
+
+		&:hover {
+			color: $pink;
+		}
+	}
+
+	&__social {
+		height: 24px;
+
+		& svg {
+			width: 24px;
+			height: 24px;
+			transition: $basic-transition linear;
+
+			@media (max-width: $screen-md) {
+				width: 35px;
+				height: 35px;
+			}
+
+			&:hover {
+				fill: $pink;
+			}
+		}
+
+		@media (max-width: $screen-md) {
+			height: 35px;
+		}
+	}
+
+	&__instagram {
+		margin-right: 5px;
+	}
+
+}

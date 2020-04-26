@@ -1,0 +1,23 @@
+html {
+	font-size: 18px;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.6;
+	color: $basic;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+address {
+	font-style: normal;
+	color: black;
+}

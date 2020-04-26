@@ -1,0 +1,23 @@
+.nav {
+	&__link {
+		font-size: .875rem;
+		font-weight: 500;
+		color: black;
+		letter-spacing: 1px;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: .2s linear;
+
+		@media (max-width: $screen-md) {
+			font-size: .7rem;
+		}
+
+		&:hover {
+			color: $pink;
+		}
+	}
+
+	&__link+&__link {
+		margin-left: 15px;
+	}
+}
