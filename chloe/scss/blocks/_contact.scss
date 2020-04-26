@@ -1,0 +1,42 @@
+.contact {
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-bottom: 50px;
+		text-align: center;
+
+		@media (max-width: $screen-sm) {
+			flex-direction: column;
+			padding-bottom: 25px;
+		}
+	}
+
+	&__item {
+		@media (max-width: $screen-sm) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__subtitle {
+		margin-bottom: 10px;
+		font-size: 1.3rem;
+		font-weight: 500;
+
+		@media (max-width: $screen-sm) {
+			font-size: 1rem;
+		}
+	}
+
+	&__info {
+		text-decoration: none;
+		color: black;
+		transition: $basic-transition linear;
+
+		&:hover {
+			color: $pink;
+		}
+	}
+
+
+}

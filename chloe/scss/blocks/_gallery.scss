@@ -1,0 +1,30 @@
+.gallery {
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		max-width: 385px;
+		max-height: 385px;
+		margin-bottom: 5px;
+		overflow: hidden;
+		background-color: $pink;
+
+		@media (max-width: $screen-md) {
+			max-width: 350px;
+			max-height: 350px;
+		}
+	}
+
+	&__image {
+		transition: opacity .1s linear;
+
+		&:hover {
+			opacity: .4;
+		}
+	}
+
+}
