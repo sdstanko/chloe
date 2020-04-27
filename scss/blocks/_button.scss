@@ -1,7 +1,8 @@
 .button {
 	display: inline-block;
 	font-size: .875rem;
-	padding: 20px 40px;
+	padding: 15px 30px;
+	margin-bottom: 200px;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: $white;
@@ -11,6 +12,7 @@
 
 	@media (max-width: $screen-sm) {
 		padding: 15px 30px;
+		margin-bottom: 0;
 		font-size: .7rem;
 	}
 

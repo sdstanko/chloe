@@ -1,5 +1,4 @@
 .intro {
-	height: 750px;
 	background: url('../images/bg1.jpg') center no-repeat;
 
 	@media (max-width: $screen-md) {
@@ -16,40 +15,49 @@
 		background: url('../images/bg1.jpg') 900px 0 repeat-x;
 	}
 
+	.container {
+		@media (max-width: $screen-sm) {
+			height: 100%;
+			background: rgba(224, 219, 217, 0.7);
+		}
 
+	}
 
 	&__inner {
 		position: relative;
 		top: 50px;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		margin-bottom: 150px;
-		padding: 35px 30px;
+		padding: 0 30px;
 		background-color: rgba(255, 255, 255, 0.8);
 
 		@media (max-width: $screen-md) {
 			top: 30px;
-			padding: 25px 20px;
 		}
 
 		@media (max-width: $screen-sm) {
 			margin-bottom: 80px;
-			padding: 15px 10px;
+			padding: 0 10px;
+		}
+	}
+
+	&__logo {
+		transition: $basic-transition linear;
+
+		&:hover {
+			opacity: .55;
 		}
 	}
 
 	&__text {
-		max-width: 50%;
+		max-width: 60%;
 
 		@media (max-width: $screen-sm) {
 			max-width: 100%;
-			padding: 60px 50px;
-			text-align: center;
-			background-color: rgba(255, 255, 255, 0.8);
-		}
-
-		@media (max-width: $screen-sm) {
 			padding: 30px 25px;
+			text-align: center;
 		}
 
 		@media (max-width: $screen-xxs) {
@@ -57,13 +65,22 @@
 		}
 	}
 
+
+	svg {
+		max-height: 80px;
+	}
+
+	text {
+		font-family: 'HouseCasual';
+		font-size: 5rem;
+	}
+
+
 	&__title {
 		margin-bottom: 20px;
-		font-size: 4rem;
-		font-family: 'Playfair Display', serif;
-		font-weight: 700;
-		text-transform: uppercase;
+		font-size: 5rem;
 		letter-spacing: 10px;
+
 
 		@media (max-width: $screen-md) {
 			font-size: 2.5rem;
@@ -84,18 +101,17 @@
 	}
 
 	&__subtitle {
-		margin-bottom: 80px;
+		margin-bottom: 30px;
+		color: black;
 		font-size: 1.5rem;
 		font-weight: 400;
 
 		@media (max-width: $screen-md) {
-			margin-bottom: 50px;
-			font-size: 1.1rem;
+			font-size: 1.3rem;
 		}
 
-		@media (max-width: $screen-sm) {
-			margin-bottom: 30px;
-			font-size: .9rem;
+		@media (max-width: $screen-xs) {
+			font-size: 1.1rem;
 		}
 	}
 }

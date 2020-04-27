@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Nord';
+	src: url('../fonts/Nord_Bold.eot');
+	src: local('☺'), url('../fonts/Nord_Bold.woff') format('woff'), url('../fonts/Nord_Bold.ttf') format('truetype'), url('../fonts/Nord_Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nord';
+	src: url('../fonts/Nord-Medium.eot');
+	src: url('../fonts/Nord-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Nord-Medium.svg#Nord-Medium') format('svg'),
+		url('../fonts/Nord-Medium.ttf') format('truetype'),
+		url('../fonts/Nord-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HouseCasual';
+	src: url('../fonts/HouseCasual.eot');
+	src: url('../fonts/HouseCasual.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HouseCasual.svg#HouseCasual') format('svg'),
+		url('../fonts/HouseCasual.ttf') format('truetype'),
+		url('../fonts/HouseCasual.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

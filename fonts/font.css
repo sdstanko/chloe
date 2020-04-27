@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Nord-Medium';
+  src: url('Nord-Medium.eot');
+  src: url('Nord-Medium.eot?#iefix') format('embedded-opentype'),
+       url('Nord-Medium.svg#Nord-Medium') format('svg'),
+       url('Nord-Medium.ttf') format('truetype'),
+       url('Nord-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
