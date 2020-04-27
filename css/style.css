@@ -264,7 +264,7 @@ address {
 @media (max-width: 767.98px) {
   .intro .container {
     height: 100%;
-    background: rgba(224, 219, 217, 0.7);
+    background: rgba(224, 219, 217, 0.6);
   }
 }
 
@@ -325,43 +325,18 @@ address {
   }
 }
 
-.intro svg {
+.intro__wrapper {
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.intro__wrapper svg {
   max-height: 80px;
 }
 
-.intro text {
+.intro__wrapper text {
   font-family: 'HouseCasual';
   font-size: 5rem;
-}
-
-.intro__title {
-  margin-bottom: 20px;
-  font-size: 5rem;
-  letter-spacing: 10px;
-}
-
-@media (max-width: 991.98px) {
-  .intro__title {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .intro__title {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .intro__title {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 413.98px) {
-  .intro__title {
-    font-size: 1.1rem;
-  }
 }
 
 .intro__subtitle {
@@ -605,6 +580,13 @@ address {
   margin-bottom: 10px;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
+}
+
+@media (max-width: 767.98px) {
+  .contact__icon {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .contact__icon:hover {
