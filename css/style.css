@@ -45,6 +45,7 @@ select {
 
 html {
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 body {
