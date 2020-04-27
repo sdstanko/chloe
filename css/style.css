@@ -146,27 +146,6 @@ address {
           align-items: center;
 }
 
-.page-header__phone-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.4rem;
-  fill: black;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
-}
-
-@media (max-width: 767.98px) {
-  .page-header__phone-icon {
-    width: 25px;
-    height: 25px;
-    margin-left: 15px;
-  }
-}
-
-.page-header__phone-icon:hover {
-  fill: #eeaa9c;
-}
-
 .page-header__phone {
   text-decoration: none;
   -webkit-transition: 0.2s linear;
@@ -183,52 +162,6 @@ address {
 
 .page-header__phone:hover {
   color: #eeaa9c;
-}
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav a {
-  height: 24px;
-}
-
-.nav svg {
-  width: 24px;
-  height: 24px;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
-}
-
-@media (max-width: 991.98px) {
-  .nav svg {
-    width: 35px;
-    height: 35px;
-  }
-}
-
-.nav svg:hover {
-  fill: #eeaa9c;
-}
-
-.nav__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media (max-width: 991.98px) {
-  .nav__social {
-    padding-bottom: 30px;
-  }
 }
 
 .intro {
@@ -437,6 +370,28 @@ address {
   margin-top: 0;
 }
 
+.nav a {
+  height: 24px;
+}
+
+.nav svg {
+  width: 24px;
+  height: 24px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+@media (max-width: 991.98px) {
+  .nav svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.nav svg:hover {
+  fill: #eeaa9c;
+}
+
 @media (max-width: 767.98px) {
   .nav {
     position: fixed;
@@ -482,17 +437,34 @@ address {
   color: #eeaa9c;
 }
 
+.nav__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (min-width: 767.98px) {
   .nav__social {
     margin-left: 50px;
   }
 }
 
+@media (max-width: 991.98px) {
+  .nav__social {
+    padding-bottom: 30px;
+  }
+}
+
 .button {
   display: inline-block;
-  font-size: .875rem;
   padding: 15px 30px;
   margin-bottom: 200px;
+  font-size: .875rem;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
