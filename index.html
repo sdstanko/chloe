@@ -86,29 +86,38 @@
 	<header class="page-header">
 		<div class="container">
 			<div class="page-header__inner">
-				<div class="page-header__contact">
-					<h3 class="page-header__slogan">
-						Не важно, какой повод! Мы найдем букет!
-					</h3>
+				<div class="page-header__logo">
+					<a href="/"><img src="../images/icons/logo.svg" height="80px" alt=""></a>
+				</div>
+				<div class="intro__burger">
+					<span></span>
+				</div>
 
-					<div class="page-header__call">
-						<a href="tel:2149977"><svg class="page-header__phone-icon">
-								<use xlink:href="#phone"></use>
+				<nav class="nav">
+					<a href="#" class="nav__link">Главная</a>
+					<a href="#" class="nav__link">Галерея</a>
+					<a href="#" class="nav__link">О нас</a>
+					<a href="#" class="nav__link">Контакты</a>
+
+
+					<div class="nav__social">
+						<a href="https://api.whatsapp.com/send?phone=79233199977">
+							<svg class="nav__link">
+								<use xlink:href="#whatsapp"></use>
+							</svg>
+						</a>
+						<a href="https://www.instagram.com/chloe_krsk/" target="_blank"><svg class="nav__link">
+								<use xlink:href="#instagram"></use>
+							</svg></a>
+						<a href="https://vk.com/chloe_krsk"><svg class="nav__link">
+								<use xlink:href="#vk"></use>
 							</svg></a>
 
-						<a href="tel:2149977" class="page-header__phone">214-99-77</a>
-
 					</div>
-				</div>
-				<div class="page-header__social">
-					<a href="https://www.instagram.com/chloe_krsk/" target="_blank"><svg class="page-header__instagram">
-							<use xlink:href="#instagram"></use>
-						</svg></a>
 
-					<a href="vk.com"><svg class="page-header__vk">
-							<use xlink:href="#vk"></use>
-						</svg></a>
-				</div>
+
+				</nav>
+
 			</div>
 		</div> <!-- ./container -->
 	</header>
@@ -117,17 +126,6 @@
 	<section class="intro">
 		<div class="container">
 
-			<div class="intro__inner">
-				<div class="intro__logo">
-					<a href="/"><img src="../images/icons/logo.svg" height="80px" alt=""></a>
-				</div>
-				<nav class="nav">
-					<a href="#" class="nav__link">Главная</a>
-					<a href="#" class="nav__link">Галерея</a>
-					<a href="#" class="nav__link">О нас</a>
-					<a href="#" class="nav__link">Контакты</a>
-				</nav>
-			</div> <!-- ./inner -->
 
 			<div class="intro__text">
 				<div class="intro__wrapper">
@@ -138,7 +136,7 @@
 				<h1 class="intro__subtitle">
 					Ваш персональный цветочный сервис
 				</h1>
-				<a href="#" class="button">Learn More</a>
+				<a href="tel:2149977" class="button">Позвоните нам!</a>
 			</div>
 
 		</div> <!-- ./container -->
@@ -152,22 +150,22 @@
 			<div class="gallery__wrapper">
 
 				<div class="gallery__item">
-					<img src="https://github.com/sdstanko/chloe/blob/master/images/gallery/gallery-1.jpg?raw=true" alt="" class="gallery__image">
+					<img src="../images/gallery/gallery-1.jpg" alt="" class="gallery__image">
 				</div>
 				<div class="gallery__item">
-					<img src="https://github.com/sdstanko/chloe/blob/master/images/gallery/gallery-2.jpg?raw=true" alt="" class="gallery__image">
+					<img src="../images/gallery/gallery-2.jpg" alt="" class="gallery__image">
 				</div>
 				<div class="gallery__item">
-					<img src="https://github.com/sdstanko/chloe/blob/master/images/gallery/gallery-3.jpg?raw=true" alt="" class="gallery__image">
+					<img src="../images/gallery/gallery-3.jpg" alt="" class="gallery__image">
 				</div>
 				<div class="gallery__item">
-					<img src="https://github.com/sdstanko/chloe/blob/master/images/gallery/gallery-4.jpg?raw=true" alt="" class="gallery__image">
+					<img src="../images/gallery/gallery-4.jpg" alt="" class="gallery__image">
 				</div>
 				<div class="gallery__item">
-					<img src="https://github.com/sdstanko/chloe/blob/master/images/gallery/gallery-5.jpg?raw=true" alt="" class="gallery__image">
+					<img src="../images/gallery/gallery-5.jpg" alt="" class="gallery__image">
 				</div>
 				<div class="gallery__item">
-					<img src="https://github.com/sdstanko/chloe/blob/master/images/gallery/gallery-6.jpg?raw=true" alt="" class="gallery__image">
+					<img src="../images/gallery/gallery-6.jpg" alt="" class="gallery__image">
 				</div>
 
 			</div> <!-- ./wrapper  -->
@@ -247,7 +245,8 @@
 		</iframe>
 	</div>
 
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 

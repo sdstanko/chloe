@@ -1,5 +1,28 @@
 .nav {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	transition: .5s ease;
+
+
+	&.active {
+		top: 80px;
+		margin-top: 0;
+	}
+
+	@media (max-width: $screen-sm) {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		display: block;
+		width: 100%;
+		margin-top: 50px;
+		background-color: white;
+		z-index: 2;
+	}
+
 	&__link {
+		margin-right: 15px;
 		font-size: .875rem;
 		font-weight: 500;
 		color: black;
@@ -12,12 +35,25 @@
 			font-size: .7rem;
 		}
 
+		@media (max-width: $screen-sm) {
+			display: block;
+			margin-left: 15px;
+			margin-bottom: 20px;
+			font-size: 1.1rem;
+			text-align: center;
+		}
+
+
+
 		&:hover {
 			color: $pink;
 		}
 	}
 
-	&__link+&__link {
-		margin-left: 15px;
+	&__social {
+		@media (min-width: $screen-sm) {
+			margin-left: 50px;
+		}
+
 	}
 }

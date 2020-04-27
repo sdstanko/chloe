@@ -1,5 +1,6 @@
 .intro {
 	background: url('../images/bg1.jpg') center no-repeat;
+	padding-top: 80px;
 
 	@media (max-width: $screen-md) {
 		background: url('../images/bg1.jpg') 1300px 0 repeat-x;
@@ -51,17 +52,73 @@
 		}
 	}
 
+	&__burger {
+		display: none;
+
+		@media (max-width: $screen-sm) {
+			display: block;
+			position: relative;
+			width: 30px;
+			height: 20px;
+			margin-right: 15px;
+		}
+
+		span {
+			position: absolute;
+			left: 0;
+			top: 9px;
+			width: 100%;
+			height: 2px;
+			background-color: black;
+			transition: $basic-transition ease;
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: black;
+			transition: $basic-transition ease;
+		}
+
+		&::before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
+
+		&.active::before {
+			transform: rotate(45deg);
+			top: 9px;
+		}
+
+		&.active::after {
+			transform: rotate(-45deg);
+			bottom: 9px;
+		}
+
+		&.active span {
+			transform: scale(0);
+		}
+	}
+
 	&__text {
 		max-width: 60%;
+		padding-top: 200px;
 
 		@media (max-width: $screen-sm) {
 			max-width: 100%;
-			padding: 30px 25px;
+			padding: 100px 25px;
 			text-align: center;
 		}
 
 		@media (max-width: $screen-xxs) {
-			padding: 10px 10px;
+			padding: 80px 10px;
 		}
 	}
 
@@ -71,7 +128,11 @@
 
 	&__wrapper {
 		max-width: 180px;
-		margin: 0 auto;
+
+
+		@media (max-width: $screen-sm) {
+			margin: 0 auto;
+		}
 
 		svg {
 			max-height: 80px;

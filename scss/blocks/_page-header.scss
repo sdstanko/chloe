@@ -1,51 +1,34 @@
 .page-header {
-	// position: fixed;
-	// width: 100%;
-	// background-color: rgba(255, 255, 255, 0.6);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background-color: $white;
 
 	&__inner {
+
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 10px 0;
-	}
 
-	&__contact {
-		display: flex;
-	}
-
-	&__slogan {
-		margin-right: 1.5rem;
-		font-weight: 400;
-
-		@media (max-width: $screen-md) {
-			font-size: 1rem;
-		}
-
-		@media (max-width: $screen-sm) {
-			display: none;
-		}
-	}
-
-	&__call {
-		display: flex;
-		align-items: center;
 	}
 
 	&__phone-icon {
 		width: 20px;
 		height: 20px;
 		margin-right: 0.4rem;
-		fill: $pink;
+		fill: black;
 		transition: $basic-transition linear;
 
 		@media (max-width: $screen-sm) {
 			width: 25px;
 			height: 25px;
+			margin-left: 15px;
 		}
 
 		&:hover {
-			fill: $basic;
+			fill: $pink;
 		}
 	}
 
@@ -55,6 +38,7 @@
 		color: $basic;
 
 		@media (max-width: $screen-sm) {
+			display: none;
 			font-size: 1.2rem;
 		}
 
@@ -63,31 +47,42 @@
 		}
 	}
 
-	&__social {
+
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+
+	& a {
 		height: 24px;
+	}
 
-		& svg {
-			width: 24px;
-			height: 24px;
-			transition: $basic-transition linear;
-
-			@media (max-width: $screen-md) {
-				width: 35px;
-				height: 35px;
-			}
-
-			&:hover {
-				fill: $pink;
-			}
-		}
+	& svg {
+		width: 24px;
+		height: 24px;
+		transition: $basic-transition linear;
 
 		@media (max-width: $screen-md) {
+			width: 35px;
 			height: 35px;
+		}
+
+		&:hover {
+			fill: $pink;
 		}
 	}
 
-	&__instagram {
-		margin-right: 5px;
+	&__social {
+		display: flex;
+		justify-content: center;
+
+		@media (max-width: $screen-md) {
+			padding-bottom: 30px;
+		}
+
+
 	}
+
 
 }
