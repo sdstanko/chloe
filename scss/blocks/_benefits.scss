@@ -26,24 +26,19 @@
 	&__row {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
 		padding-bottom: 70px;
 
 		@media (max-width: $screen-sm) {
-			justify-content: space-around;
-			flex-direction: column;
 			padding-bottom: 20px;
 		}
-
-
 	}
 
 	&__item {
-		max-width: 290px;
+		width: 33.33333%;
 		text-align: center;
 
 		@media (max-width: $screen-sm) {
-			max-width: 100%;
+			width: 100%;
 			margin-bottom: 30px;
 		}
 	}
@@ -55,8 +50,8 @@
 		transition: $basic-transition linear;
 
 		@media (max-width: $screen-sm) {
-			width: 70px;
-			height: 70px;
+			width: 80px;
+			height: 80px;
 		}
 
 		&:hover {

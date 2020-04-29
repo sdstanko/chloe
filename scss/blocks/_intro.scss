@@ -52,60 +52,7 @@
 		}
 	}
 
-	&__burger {
-		display: none;
 
-		@media (max-width: $screen-sm) {
-			display: block;
-			position: relative;
-			width: 30px;
-			height: 20px;
-			margin-right: 15px;
-		}
-
-		span {
-			position: absolute;
-			left: 0;
-			top: 9px;
-			width: 100%;
-			height: 2px;
-			background-color: black;
-			transition: $basic-transition ease;
-		}
-
-		&::before,
-		&::after {
-			content: '';
-			position: absolute;
-			left: 0;
-			width: 100%;
-			height: 2px;
-			background-color: black;
-			transition: $basic-transition ease;
-		}
-
-		&::before {
-			top: 0;
-		}
-
-		&::after {
-			bottom: 0;
-		}
-
-		&.active::before {
-			transform: rotate(45deg);
-			top: 9px;
-		}
-
-		&.active::after {
-			transform: rotate(-45deg);
-			bottom: 9px;
-		}
-
-		&.active span {
-			transform: scale(0);
-		}
-	}
 
 	&__text {
 		max-width: 60%;
@@ -156,6 +103,31 @@
 
 		@media (max-width: $screen-xs) {
 			font-size: 1.1rem;
+		}
+	}
+
+	&__button {
+		display: inline-block;
+		padding: 15px 30px;
+		margin-bottom: 200px;
+		font-size: .875rem;
+		font-weight: 700;
+		letter-spacing: 1px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $white;
+		background-color: $pink;
+		border-radius: 4px;
+		transition: $basic-transition linear;
+
+		@media (max-width: $screen-sm) {
+			padding: 15px 30px;
+			margin-bottom: 0;
+			font-size: .7rem;
+		}
+
+		&:hover {
+			background-color: black;
 		}
 	}
 }

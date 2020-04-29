@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Chloe</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 </head>
 
 <!-- sprite -->
@@ -79,6 +80,21 @@
 			d="M256 260c54.898 0 100-44.457 100-100 0-55.14-44.86-100-100-100s-100 44.86-100 100c0 55.559 45.117 100 100 100zm0-180c44.113 0 80 35.887 80 80 0 44.523-36.176 80-80 80-43.836 0-80-35.477-80-80 0-44.113 35.887-80 80-80zm42.121 214.125c-4.726-2.852-10.875-1.328-13.726 3.402l-36.961 61.32c-2.852 4.731-1.329 10.876 3.402 13.727 4.75 2.864 10.887 1.309 13.727-3.402l36.96-61.32c2.852-4.73 1.329-10.875-3.402-13.727zm0 0">
 		</path>
 	</symbol>
+
+	<symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="viber">
+		<path
+			d="M23.155 13.893c.716-6.027-.344-9.832-2.256-11.553l.001-.001C17.814-.6 7.392-1.035 3.7 2.471 2.042 4.186 1.458 6.703 1.394 9.819c-.064 3.117-.14 8.956 5.301 10.54H6.7l-.005 2.419s-.037.98.589 1.177c.716.232 1.04-.223 3.267-2.883 3.724.323 6.584-.417 6.909-.525.752-.252 5.007-.815 5.695-6.654zM10.918 19.37s-2.357 2.939-3.09 3.702c-.24.248-.503.225-.499-.267 0-.323.018-4.016.018-4.016-4.613-1.322-4.341-6.294-4.291-8.895.05-2.602.526-4.733 1.93-6.168C8.225.689 17.362 1.368 19.69 3.556c2.846 2.523 1.833 9.651 1.839 9.894-.585 4.874-4.033 5.183-4.667 5.394-.271.09-2.786.737-5.944.526z">
+		</path>
+		<path
+			d="M12.222 4.297c-.385 0-.385.6 0 .605 2.987.023 5.447 2.105 5.474 5.924 0 .403.59.398.585-.005h-.001c-.032-4.115-2.718-6.501-6.058-6.524z">
+		</path>
+		<path
+			d="M16.151 10.193c-.009.398.58.417.585.014.049-2.269-1.35-4.138-3.979-4.335-.385-.028-.425.577-.041.605 2.28.173 3.481 1.729 3.435 3.716zm-.63 2.581c-.494-.286-.997-.108-1.205.173l-.435.563c-.221.286-.634.248-.634.248-3.014-.797-3.82-3.951-3.82-3.951s-.037-.427.239-.656l.544-.45c.272-.216.444-.736.167-1.247-.74-1.337-1.237-1.798-1.49-2.152-.266-.333-.666-.408-1.082-.183h-.009c-.865.506-1.812 1.453-1.509 2.428.517 1.028 1.467 4.305 4.495 6.781 1.423 1.171 3.675 2.371 4.631 2.648l.009.014c.942.314 1.858-.67 2.347-1.561v-.007c.217-.431.145-.839-.172-1.106-.562-.548-1.41-1.153-2.076-1.542z">
+		</path>
+		<path
+			d="M13.169 8.104c.961.056 1.427.558 1.477 1.589.018.403.603.375.585-.028-.064-1.346-.766-2.096-2.03-2.166-.385-.023-.421.582-.032.605z">
+		</path>
+	</symbol>
 </svg>
 
 <body>
@@ -87,17 +103,18 @@
 		<div class="container">
 			<div class="page-header__inner">
 				<div class="page-header__logo">
-					<a href="/"><img src="https://svgshare.com/i/KYi.svg" height="80px" alt=""></a>
+
+					<a href="/"><img src="https://svgshare.com/i/KZN.svg" height="80px" width="100px" alt=""></a>
 				</div>
-				<div class="intro__burger">
+				<div class="page-header__burger">
 					<span></span>
 				</div>
 
 				<nav class="nav">
-					<a href="#" class="nav__link">Главная</a>
-					<a href="#" class="nav__link">Галерея</a>
-					<a href="#" class="nav__link">О нас</a>
-					<a href="#" class="nav__link">Контакты</a>
+					<a href="#" data-scroll=".intro" class="nav__link">Главная</a>
+					<a href="#" data-scroll=".gallery" class="nav__link">Галерея</a>
+					<a href="#" data-scroll="" class="nav__link">О нас</a>
+					<a href="#" data-scroll=".contact" class="nav__link">Контакты</a>
 
 
 					<div class="nav__social">
@@ -109,13 +126,14 @@
 						<a href="https://www.instagram.com/chloe_krsk/" target="_blank"><svg class="nav__link">
 								<use xlink:href="#instagram"></use>
 							</svg></a>
-						<a href="https://vk.com/chloe_krsk"><svg class="nav__link">
+						<a href="https://vk.com/chloe_krsk" target="_blank"><svg class="nav__link">
 								<use xlink:href="#vk"></use>
+							</svg></a>
+						<a href="https://vk.com/chloe_krsk"><svg class="nav__link">
+								<use xlink:href="#viber"></use>
 							</svg></a>
 
 					</div>
-
-
 				</nav>
 
 			</div>
@@ -126,7 +144,6 @@
 	<section class="intro">
 		<div class="container">
 
-
 			<div class="intro__text">
 				<div class="intro__wrapper">
 					<svg>
@@ -136,7 +153,7 @@
 				<h1 class="intro__subtitle">
 					Ваш персональный цветочный сервис
 				</h1>
-				<a href="tel:2149977" class="button">Позвоните нам!</a>
+				<a href="tel:2149977" class="intro__button">Позвоните нам!</a>
 			</div>
 
 		</div> <!-- ./container -->
@@ -144,33 +161,72 @@
 
 	<!-- gallery -->
 	<section class="gallery">
-		<div class="container">
+		<div class="gallery__container">
 
-			<h3 class="section-title section-title--gallery">Наша Галерея</h3>
-			<div class="gallery__wrapper">
+			<h3 class="section-title">Наша Галерея</h3>
+			<div class="swiper-wrapper">
 
-				<div class="gallery__item">
-					<img src="https://github.com/sdstanko/chloe/blob/master/images/gallery/gallery-1.jpg?raw=true" alt="" class="gallery__image">
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-1.png" alt="" class="gallery__image">
 				</div>
-				<div class="gallery__item">
-					<img src="https://github.com/sdstanko/chloe/blob/master/images/gallery/gallery-2.jpg?raw=true" alt="" class="gallery__image">
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-2.png" alt="" class="gallery__image">
 				</div>
-				<div class="gallery__item">
-					<img src="https://github.com/sdstanko/chloe/blob/master/images/gallery/gallery-3.jpg?raw=true" alt="" class="gallery__image">
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-3.png" alt="" class="gallery__image">
 				</div>
-				<div class="gallery__item">
-					<img src="https://github.com/sdstanko/chloe/blob/master/images/gallery/gallery-4.jpg?raw=true" alt="" class="gallery__image">
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-4.jpg" alt="" class="gallery__image">
 				</div>
-				<div class="gallery__item">
-					<img src="https://github.com/sdstanko/chloe/blob/master/images/gallery/gallery-5.jpg?raw=true" alt="" class="gallery__image">
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-5.png" alt="" class="gallery__image">
 				</div>
-				<div class="gallery__item">
-					<img src="https://github.com/sdstanko/chloe/blob/master/images/gallery/gallery-6.jpg?raw=true" alt="" class="gallery__image">
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-7.png" alt="" class="gallery__image">
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-8.png" alt="" class="gallery__image">
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-9.png" alt="" class="gallery__image">
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-10.jpg" alt="" class="gallery__image">
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-11.jpg" alt="" class="gallery__image">
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-12.png" alt="" class="gallery__image">
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-13.jpg" alt="" class="gallery__image">
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-14.png" alt="" class="gallery__image">
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-15.png" alt="" class="gallery__image">
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-16.jpg" alt="" class="gallery__image">
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-17.png" alt="" class="gallery__image">
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-18.jpg" alt="" class="gallery__image">
+				</div>
+				<div class="swiper-slide">
+					<img src="../images/gallery/gallery-19.png" alt="" class="gallery__image">
 				</div>
 
 			</div> <!-- ./wrapper  -->
+			<div class="swiper-pagination"></div>
 		</div> <!-- ./container -->
+
 	</section>
+
 
 	<!-- benefits -->
 	<section class="benefits">
@@ -183,7 +239,7 @@
 						<svg class="benefits__icon">
 							<use xlink:href="#truck"></use>
 						</svg>
-						<h4 class="benefits__subtitle">Доставляем от 500&#8381; бесплатно</h4>
+						<h4 class="benefits__subtitle">Доставляем от 3000 &#8381; бесплатно</h4>
 					</div>
 					<div class="benefits__item">
 						<svg class="benefits__icon">
@@ -225,6 +281,15 @@
 					<a href="tel:2149977" class="contact__info">214-99-77</a>
 				</div>
 				<div class="contact__item">
+					<a href="viber://chat?number=+79233199977">
+						<svg class="contact__icon">
+							<use xlink:href="#viber"></use>
+						</svg>
+					</a>
+					<h4 class="contact__subtitle">Viber</h4>
+					<a href="viber://chat?number=+79233199977" class="contact__info">Связаться с нами</a>
+				</div>
+				<div class="contact__item">
 					<svg class="contact__icon">
 						<use xlink:href="#address"></use>
 					</svg>
@@ -246,6 +311,7 @@
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
 	<script src="js/script.js"></script>
 
 </body>

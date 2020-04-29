@@ -6,11 +6,30 @@
 
 
 	&.active {
-		top: 80px;
+		top: 60px;
 		margin-top: 0;
 	}
 
-	@media (max-width: $screen-sm) {
+	& a {
+		height: 24px;
+	}
+
+	& svg {
+		width: 24px;
+		height: 24px;
+		transition: $basic-transition linear;
+
+		@media (max-width: $screen-sm) {
+			width: 35px;
+			height: 35px;
+		}
+
+		&:hover {
+			fill: $pink;
+		}
+	}
+
+	@media (max-width: $screen-md) {
 		position: fixed;
 		top: -100%;
 		left: 0;
@@ -35,7 +54,7 @@
 			font-size: .7rem;
 		}
 
-		@media (max-width: $screen-sm) {
+		@media (max-width: $screen-md) {
 			display: block;
 			margin-left: 15px;
 			margin-bottom: 20px;
@@ -43,17 +62,23 @@
 			text-align: center;
 		}
 
-
-
 		&:hover {
 			color: $pink;
 		}
 	}
 
 	&__social {
-		@media (min-width: $screen-sm) {
+		display: flex;
+		justify-content: center;
+
+		@media (min-width: $screen-md) {
 			margin-left: 50px;
 		}
+
+		@media (max-width: $screen-md) {
+			padding-bottom: 30px;
+		}
+
 
 	}
 }
