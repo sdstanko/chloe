@@ -500,7 +500,7 @@ address {
 .gallery__image {
   width: 100%;
   max-width: 390px;
-  max-height: 390px;
+  max-height: 470px;
   margin: 0 auto;
   padding: 0 15px;
   -webkit-transition: opacity .1s linear;
